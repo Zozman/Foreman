@@ -49,10 +49,10 @@
 		BB2B56F71838532900288708 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB2B56F91838532900288708 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BB2B56FB1838532900288708 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BB2B56FF1838532900288708 /* Slush Watch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Slush Watch-Info.plist"; sourceTree = "<group>"; };
+		BB2B56FF1838532900288708 /* Foreman-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Foreman-Info.plist"; sourceTree = "<group>"; };
 		BB2B57011838532900288708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB2B57031838532900288708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BB2B57051838532900288708 /* Slush Watch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Slush Watch-Prefix.pch"; sourceTree = "<group>"; };
+		BB2B57051838532900288708 /* Foreman-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Foreman-Prefix.pch"; sourceTree = "<group>"; };
 		BB2B57061838532900288708 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB2B57071838532900288708 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB2B570A1838532900288708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -60,9 +60,9 @@
 		BB2B57121838532900288708 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		BB2B57131838532900288708 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BB2B57151838532900288708 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BB2B571B1838532900288708 /* Slush WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slush WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2B571B1838532900288708 /* ForemanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForemanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2B571C1838532900288708 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		BB2B57241838532900288708 /* Slush WatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Slush WatchTests-Info.plist"; sourceTree = "<group>"; };
+		BB2B57241838532900288708 /* ForemanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ForemanTests-Info.plist"; sourceTree = "<group>"; };
 		BB2B57261838532900288708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB2B57281838532900288708 /* Slush_WatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slush_WatchTests.m; sourceTree = "<group>"; };
 		BB2B57321838585300288708 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
@@ -111,8 +111,8 @@
 		BB2B56EB1838532900288708 = {
 			isa = PBXGroup;
 			children = (
-				BB2B56FD1838532900288708 /* Slush Watch */,
-				BB2B57221838532900288708 /* Slush WatchTests */,
+				BB2B56FD1838532900288708 /* Foreman */,
+				BB2B57221838532900288708 /* Foreman Tests */,
 				BB2B56F61838532900288708 /* Frameworks */,
 				BB2B56F51838532900288708 /* Products */,
 			);
@@ -122,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				BB2B56F41838532900288708 /* Foreman.app */,
-				BB2B571B1838532900288708 /* Slush WatchTests.xctest */,
+				BB2B571B1838532900288708 /* ForemanTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BB2B56FD1838532900288708 /* Slush Watch */ = {
+		BB2B56FD1838532900288708 /* Foreman */ = {
 			isa = PBXGroup;
 			children = (
 				BB8BE4EF18395F5F00BD9266 /* View Controllers */,
@@ -151,6 +151,7 @@
 				BB2B57151838532900288708 /* Images.xcassets */,
 				BB2B56FE1838532900288708 /* Supporting Files */,
 			);
+			name = Foreman;
 			path = "Slush Watch";
 			sourceTree = "<group>";
 		};
@@ -158,27 +159,28 @@
 			isa = PBXGroup;
 			children = (
 				BB8BE4F018395F7700BD9266 /* Images */,
-				BB2B56FF1838532900288708 /* Slush Watch-Info.plist */,
+				BB2B56FF1838532900288708 /* Foreman-Info.plist */,
 				BB2B57001838532900288708 /* InfoPlist.strings */,
 				BB2B57031838532900288708 /* main.m */,
-				BB2B57051838532900288708 /* Slush Watch-Prefix.pch */,
+				BB2B57051838532900288708 /* Foreman-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BB2B57221838532900288708 /* Slush WatchTests */ = {
+		BB2B57221838532900288708 /* Foreman Tests */ = {
 			isa = PBXGroup;
 			children = (
 				BB2B57281838532900288708 /* Slush_WatchTests.m */,
 				BB2B57231838532900288708 /* Supporting Files */,
 			);
+			name = "Foreman Tests";
 			path = "Slush WatchTests";
 			sourceTree = "<group>";
 		};
 		BB2B57231838532900288708 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BB2B57241838532900288708 /* Slush WatchTests-Info.plist */,
+				BB2B57241838532900288708 /* ForemanTests-Info.plist */,
 				BB2B57251838532900288708 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -234,9 +236,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB2B56F31838532900288708 /* Slush Watch */ = {
+		BB2B56F31838532900288708 /* Foreman */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB2B572C1838532900288708 /* Build configuration list for PBXNativeTarget "Slush Watch" */;
+			buildConfigurationList = BB2B572C1838532900288708 /* Build configuration list for PBXNativeTarget "Foreman" */;
 			buildPhases = (
 				BB2B56F01838532900288708 /* Sources */,
 				BB2B56F11838532900288708 /* Frameworks */,
@@ -246,14 +248,14 @@
 			);
 			dependencies = (
 			);
-			name = "Slush Watch";
+			name = Foreman;
 			productName = "Slush Watch";
 			productReference = BB2B56F41838532900288708 /* Foreman.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BB2B571A1838532900288708 /* Slush WatchTests */ = {
+		BB2B571A1838532900288708 /* ForemanTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB2B572F1838532900288708 /* Build configuration list for PBXNativeTarget "Slush WatchTests" */;
+			buildConfigurationList = BB2B572F1838532900288708 /* Build configuration list for PBXNativeTarget "ForemanTests" */;
 			buildPhases = (
 				BB2B57171838532900288708 /* Sources */,
 				BB2B57181838532900288708 /* Frameworks */,
@@ -264,9 +266,9 @@
 			dependencies = (
 				BB2B57211838532900288708 /* PBXTargetDependency */,
 			);
-			name = "Slush WatchTests";
+			name = ForemanTests;
 			productName = "Slush WatchTests";
-			productReference = BB2B571B1838532900288708 /* Slush WatchTests.xctest */;
+			productReference = BB2B571B1838532900288708 /* ForemanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -286,7 +288,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB2B56EF1838532900288708 /* Build configuration list for PBXProject "Slush Watch" */;
+			buildConfigurationList = BB2B56EF1838532900288708 /* Build configuration list for PBXProject "Foreman" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -299,8 +301,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB2B56F31838532900288708 /* Slush Watch */,
-				BB2B571A1838532900288708 /* Slush WatchTests */,
+				BB2B56F31838532900288708 /* Foreman */,
+				BB2B571A1838532900288708 /* ForemanTests */,
 			);
 		};
 /* End PBXProject section */
@@ -361,7 +363,7 @@
 /* Begin PBXTargetDependency section */
 		BB2B57211838532900288708 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BB2B56F31838532900288708 /* Slush Watch */;
+			target = BB2B56F31838532900288708 /* Foreman */;
 			targetProxy = BB2B57201838532900288708 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -483,8 +485,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Slush Watch/Slush Watch-Prefix.pch";
-				INFOPLIST_FILE = "Slush Watch/Slush Watch-Info.plist";
+				GCC_PREFIX_HEADER = "Slush Watch/Foreman-Prefix.pch";
+				INFOPLIST_FILE = "Slush Watch/Foreman-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = Foreman;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -499,8 +501,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Slush Watch/Slush Watch-Prefix.pch";
-				INFOPLIST_FILE = "Slush Watch/Slush Watch-Info.plist";
+				GCC_PREFIX_HEADER = "Slush Watch/Foreman-Prefix.pch";
+				INFOPLIST_FILE = "Slush Watch/Foreman-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = Foreman;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -524,8 +526,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Slush WatchTests/Slush WatchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Slush WatchTests/ForemanTests-Info.plist";
+				PRODUCT_NAME = ForemanTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -543,8 +545,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Slush Watch/Slush Watch-Prefix.pch";
-				INFOPLIST_FILE = "Slush WatchTests/Slush WatchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Slush WatchTests/ForemanTests-Info.plist";
+				PRODUCT_NAME = ForemanTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -553,7 +555,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB2B56EF1838532900288708 /* Build configuration list for PBXProject "Slush Watch" */ = {
+		BB2B56EF1838532900288708 /* Build configuration list for PBXProject "Foreman" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB2B572A1838532900288708 /* Debug */,
@@ -562,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB2B572C1838532900288708 /* Build configuration list for PBXNativeTarget "Slush Watch" */ = {
+		BB2B572C1838532900288708 /* Build configuration list for PBXNativeTarget "Foreman" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB2B572D1838532900288708 /* Debug */,
@@ -571,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB2B572F1838532900288708 /* Build configuration list for PBXNativeTarget "Slush WatchTests" */ = {
+		BB2B572F1838532900288708 /* Build configuration list for PBXNativeTarget "ForemanTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB2B57301838532900288708 /* Debug */,

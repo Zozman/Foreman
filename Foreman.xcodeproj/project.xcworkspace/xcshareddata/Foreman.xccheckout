@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EAC2F9EB-0F88-483A-8772-E72D07FDDB7D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Foreman</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6A21CB74-AC24-4E9B-BEB7-324BDB2B173B</key>
+		<string>https://github.com/Zozman/Foreman.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Foreman.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6A21CB74-AC24-4E9B-BEB7-324BDB2B173B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Zozman/Foreman.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6A21CB74-AC24-4E9B-BEB7-324BDB2B173B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6A21CB74-AC24-4E9B-BEB7-324BDB2B173B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Foreman</string>
+		</dict>
+	</array>
+</dict>
+</plist>

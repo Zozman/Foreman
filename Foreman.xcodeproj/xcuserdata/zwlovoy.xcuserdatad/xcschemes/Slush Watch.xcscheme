@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB2B56F31838532900288708"
                BuildableName = "Foreman.app"
-               BlueprintName = "Slush Watch"
-               ReferencedContainer = "container:Slush Watch.xcodeproj">
+               BlueprintName = "Foreman"
+               ReferencedContainer = "container:Foreman.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB2B571A1838532900288708"
-               BuildableName = "Slush WatchTests.xctest"
-               BlueprintName = "Slush WatchTests"
-               ReferencedContainer = "container:Slush Watch.xcodeproj">
+               BuildableName = "ForemanTests.xctest"
+               BlueprintName = "ForemanTests"
+               ReferencedContainer = "container:Foreman.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB2B56F31838532900288708"
             BuildableName = "Foreman.app"
-            BlueprintName = "Slush Watch"
-            ReferencedContainer = "container:Slush Watch.xcodeproj">
+            BlueprintName = "Foreman"
+            ReferencedContainer = "container:Foreman.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB2B56F31838532900288708"
             BuildableName = "Foreman.app"
-            BlueprintName = "Slush Watch"
-            ReferencedContainer = "container:Slush Watch.xcodeproj">
+            BlueprintName = "Foreman"
+            ReferencedContainer = "container:Foreman.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB2B56F31838532900288708"
             BuildableName = "Foreman.app"
-            BlueprintName = "Slush Watch"
-            ReferencedContainer = "container:Slush Watch.xcodeproj">
+            BlueprintName = "Foreman"
+            ReferencedContainer = "container:Foreman.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

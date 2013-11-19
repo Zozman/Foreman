@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Slush Watch.xcodeproj">
+      location = "self:Foreman.xcodeproj">
    </FileRef>
 </Workspace>
