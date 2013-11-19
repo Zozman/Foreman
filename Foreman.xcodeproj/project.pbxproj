@@ -151,8 +151,7 @@
 				BB2B57151838532900288708 /* Images.xcassets */,
 				BB2B56FE1838532900288708 /* Supporting Files */,
 			);
-			name = Foreman;
-			path = "Slush Watch";
+			path = Foreman;
 			sourceTree = "<group>";
 		};
 		BB2B56FE1838532900288708 /* Supporting Files */ = {
@@ -173,8 +172,7 @@
 				BB2B57281838532900288708 /* Slush_WatchTests.m */,
 				BB2B57231838532900288708 /* Supporting Files */,
 			);
-			name = "Foreman Tests";
-			path = "Slush WatchTests";
+			path = "Foreman Tests";
 			sourceTree = "<group>";
 		};
 		BB2B57231838532900288708 /* Supporting Files */ = {
@@ -485,8 +483,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Slush Watch/Foreman-Prefix.pch";
-				INFOPLIST_FILE = "Slush Watch/Foreman-Info.plist";
+				GCC_PREFIX_HEADER = "Foreman/Foreman-Prefix.pch";
+				INFOPLIST_FILE = "Foreman/Foreman-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = Foreman;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -501,8 +499,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Slush Watch/Foreman-Prefix.pch";
-				INFOPLIST_FILE = "Slush Watch/Foreman-Info.plist";
+				GCC_PREFIX_HEADER = "Foreman/Foreman-Prefix.pch";
+				INFOPLIST_FILE = "Foreman/Foreman-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = Foreman;
 				TARGETED_DEVICE_FAMILY = 1;
