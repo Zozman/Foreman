@@ -1,6 +1,6 @@
 //
 //  StatsViewController.h
-//  Slush Watch
+//  Foreman
 //
 //  Created by Zac Lovoy on 11/17/13.
 //  Copyright (c) 2013 Zozworks. All rights reserved.
