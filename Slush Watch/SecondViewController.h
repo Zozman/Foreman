@@ -10,4 +10,13 @@
 
 @interface SecondViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *apiKeyLabel;
+@property (weak, nonatomic) IBOutlet UITextField *apiKeyBox;
+@property (weak, nonatomic) IBOutlet UIButton *saveKeyButton;
+- (IBAction)saveKeyButton:(id)sender;
+- (IBAction)getKeyButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *appByButton;
+- (IBAction)appByButton:(id)sender;
+- (IBAction)iconByButton:(id)sender;
+
 @end

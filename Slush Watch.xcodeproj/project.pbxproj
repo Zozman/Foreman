@@ -15,7 +15,6 @@
 		BB2B57081838532900288708 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B57071838532900288708 /* AppDelegate.m */; };
 		BB2B570B1838532900288708 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2B57091838532900288708 /* Main_iPhone.storyboard */; };
 		BB2B570E1838532900288708 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2B570C1838532900288708 /* Main_iPad.storyboard */; };
-		BB2B57111838532900288708 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B57101838532900288708 /* FirstViewController.m */; };
 		BB2B57141838532900288708 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B57131838532900288708 /* SecondViewController.m */; };
 		BB2B57161838532900288708 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2B57151838532900288708 /* Images.xcassets */; };
 		BB2B571D1838532900288708 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B571C1838532900288708 /* XCTest.framework */; };
@@ -23,6 +22,16 @@
 		BB2B571F1838532900288708 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B56FB1838532900288708 /* UIKit.framework */; };
 		BB2B57271838532900288708 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB2B57251838532900288708 /* InfoPlist.strings */; };
 		BB2B57291838532900288708 /* Slush_WatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B57281838532900288708 /* Slush_WatchTests.m */; };
+		BB2B57341838585300288708 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B57331838585300288708 /* Utilities.m */; };
+		BB2B573A18385ABE00288708 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B573918385ABE00288708 /* UserData.m */; };
+		BB2B573D18385AF300288708 /* Json.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B573C18385AF300288708 /* Json.m */; };
+		BB2B57401838657200288708 /* Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B573F1838657200288708 /* Alerts.m */; };
+		BB2B5745183876B100288708 /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B5744183876B100288708 /* Worker.m */; };
+		BB8BE4EB1839106200BD9266 /* WorkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8BE4EA1839106200BD9266 /* WorkerViewController.m */; };
+		BB8BE4EE1839533B00BD9266 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8BE4ED1839533B00BD9266 /* StatsViewController.m */; };
+		BB8BE4F218395FEF00BD9266 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8BE4F118395FEF00BD9266 /* cloud.png */; };
+		BB8BE4F41839604300BD9266 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8BE4F31839604300BD9266 /* home.png */; };
+		BB8BE4F61839609800BD9266 /* spanner.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8BE4F51839609800BD9266 /* spanner.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB2B56F41838532900288708 /* Slush Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slush Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2B56F41838532900288708 /* Foreman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foreman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2B56F71838532900288708 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB2B56F91838532900288708 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BB2B56FB1838532900288708 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -48,8 +57,6 @@
 		BB2B57071838532900288708 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB2B570A1838532900288708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		BB2B570D1838532900288708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		BB2B570F1838532900288708 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		BB2B57101838532900288708 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		BB2B57121838532900288708 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		BB2B57131838532900288708 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BB2B57151838532900288708 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -58,6 +65,23 @@
 		BB2B57241838532900288708 /* Slush WatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Slush WatchTests-Info.plist"; sourceTree = "<group>"; };
 		BB2B57261838532900288708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB2B57281838532900288708 /* Slush_WatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slush_WatchTests.m; sourceTree = "<group>"; };
+		BB2B57321838585300288708 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		BB2B57331838585300288708 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		BB2B573818385ABE00288708 /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		BB2B573918385ABE00288708 /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		BB2B573B18385AF300288708 /* Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Json.h; sourceTree = "<group>"; };
+		BB2B573C18385AF300288708 /* Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Json.m; sourceTree = "<group>"; };
+		BB2B573E1838657200288708 /* Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alerts.h; sourceTree = "<group>"; };
+		BB2B573F1838657200288708 /* Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alerts.m; sourceTree = "<group>"; };
+		BB2B5743183876B100288708 /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		BB2B5744183876B100288708 /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
+		BB8BE4E91839106200BD9266 /* WorkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkerViewController.h; sourceTree = "<group>"; };
+		BB8BE4EA1839106200BD9266 /* WorkerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkerViewController.m; sourceTree = "<group>"; };
+		BB8BE4EC1839533B00BD9266 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
+		BB8BE4ED1839533B00BD9266 /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
+		BB8BE4F118395FEF00BD9266 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		BB8BE4F31839604300BD9266 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		BB8BE4F51839609800BD9266 /* spanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spanner.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +121,7 @@
 		BB2B56F51838532900288708 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB2B56F41838532900288708 /* Slush Watch.app */,
+				BB2B56F41838532900288708 /* Foreman.app */,
 				BB2B571B1838532900288708 /* Slush WatchTests.xctest */,
 			);
 			name = Products;
@@ -117,14 +141,13 @@
 		BB2B56FD1838532900288708 /* Slush Watch */ = {
 			isa = PBXGroup;
 			children = (
+				BB8BE4EF18395F5F00BD9266 /* View Controllers */,
+				BB2B57421838724D00288708 /* Models */,
+				BB2B57411838722C00288708 /* Utilities */,
 				BB2B57061838532900288708 /* AppDelegate.h */,
 				BB2B57071838532900288708 /* AppDelegate.m */,
 				BB2B57091838532900288708 /* Main_iPhone.storyboard */,
 				BB2B570C1838532900288708 /* Main_iPad.storyboard */,
-				BB2B570F1838532900288708 /* FirstViewController.h */,
-				BB2B57101838532900288708 /* FirstViewController.m */,
-				BB2B57121838532900288708 /* SecondViewController.h */,
-				BB2B57131838532900288708 /* SecondViewController.m */,
 				BB2B57151838532900288708 /* Images.xcassets */,
 				BB2B56FE1838532900288708 /* Supporting Files */,
 			);
@@ -134,6 +157,7 @@
 		BB2B56FE1838532900288708 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BB8BE4F018395F7700BD9266 /* Images */,
 				BB2B56FF1838532900288708 /* Slush Watch-Info.plist */,
 				BB2B57001838532900288708 /* InfoPlist.strings */,
 				BB2B57031838532900288708 /* main.m */,
@@ -160,6 +184,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BB2B57411838722C00288708 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BB2B573B18385AF300288708 /* Json.h */,
+				BB2B573C18385AF300288708 /* Json.m */,
+				BB2B573E1838657200288708 /* Alerts.h */,
+				BB2B573F1838657200288708 /* Alerts.m */,
+				BB2B57321838585300288708 /* Utilities.h */,
+				BB2B57331838585300288708 /* Utilities.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		BB2B57421838724D00288708 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB2B573818385ABE00288708 /* UserData.h */,
+				BB2B573918385ABE00288708 /* UserData.m */,
+				BB2B5743183876B100288708 /* Worker.h */,
+				BB2B5744183876B100288708 /* Worker.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BB8BE4EF18395F5F00BD9266 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB2B57121838532900288708 /* SecondViewController.h */,
+				BB2B57131838532900288708 /* SecondViewController.m */,
+				BB8BE4E91839106200BD9266 /* WorkerViewController.h */,
+				BB8BE4EA1839106200BD9266 /* WorkerViewController.m */,
+				BB8BE4EC1839533B00BD9266 /* StatsViewController.h */,
+				BB8BE4ED1839533B00BD9266 /* StatsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB8BE4F018395F7700BD9266 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BB8BE4F118395FEF00BD9266 /* cloud.png */,
+				BB8BE4F31839604300BD9266 /* home.png */,
+				BB8BE4F51839609800BD9266 /* spanner.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,7 +248,7 @@
 			);
 			name = "Slush Watch";
 			productName = "Slush Watch";
-			productReference = BB2B56F41838532900288708 /* Slush Watch.app */;
+			productReference = BB2B56F41838532900288708 /* Foreman.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BB2B571A1838532900288708 /* Slush WatchTests */ = {
@@ -207,6 +278,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Zozworks;
 				TargetAttributes = {
+					BB2B56F31838532900288708 = {
+						DevelopmentTeam = EAGTZY2K89;
+					};
 					BB2B571A1838532900288708 = {
 						TestTargetID = BB2B56F31838532900288708;
 					};
@@ -236,7 +310,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8BE4F218395FEF00BD9266 /* cloud.png in Resources */,
 				BB2B570E1838532900288708 /* Main_iPad.storyboard in Resources */,
+				BB8BE4F41839604300BD9266 /* home.png in Resources */,
+				BB8BE4F61839609800BD9266 /* spanner.png in Resources */,
 				BB2B57161838532900288708 /* Images.xcassets in Resources */,
 				BB2B570B1838532900288708 /* Main_iPhone.storyboard in Resources */,
 				BB2B57021838532900288708 /* InfoPlist.strings in Resources */,
@@ -260,8 +337,14 @@
 			files = (
 				BB2B57141838532900288708 /* SecondViewController.m in Sources */,
 				BB2B57081838532900288708 /* AppDelegate.m in Sources */,
-				BB2B57111838532900288708 /* FirstViewController.m in Sources */,
+				BB2B573D18385AF300288708 /* Json.m in Sources */,
+				BB8BE4EE1839533B00BD9266 /* StatsViewController.m in Sources */,
+				BB8BE4EB1839106200BD9266 /* WorkerViewController.m in Sources */,
 				BB2B57041838532900288708 /* main.m in Sources */,
+				BB2B573A18385ABE00288708 /* UserData.m in Sources */,
+				BB2B57401838657200288708 /* Alerts.m in Sources */,
+				BB2B5745183876B100288708 /* Worker.m in Sources */,
+				BB2B57341838585300288708 /* Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +481,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Slush Watch/Slush Watch-Prefix.pch";
 				INFOPLIST_FILE = "Slush Watch/Slush Watch-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Foreman;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,10 +497,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Slush Watch/Slush Watch-Prefix.pch";
 				INFOPLIST_FILE = "Slush Watch/Slush Watch-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Foreman;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -480,6 +569,7 @@
 				BB2B572E1838532900288708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB2B572F1838532900288708 /* Build configuration list for PBXNativeTarget "Slush WatchTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +578,7 @@
 				BB2B57311838532900288708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
