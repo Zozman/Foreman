@@ -14,7 +14,6 @@
 		BB2B57041838532900288708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B57031838532900288708 /* main.m */; };
 		BB2B57081838532900288708 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B57071838532900288708 /* AppDelegate.m */; };
 		BB2B570B1838532900288708 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2B57091838532900288708 /* Main_iPhone.storyboard */; };
-		BB2B570E1838532900288708 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2B570C1838532900288708 /* Main_iPad.storyboard */; };
 		BB2B57141838532900288708 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B57131838532900288708 /* SecondViewController.m */; };
 		BB2B57161838532900288708 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2B57151838532900288708 /* Images.xcassets */; };
 		BB2B571D1838532900288708 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B571C1838532900288708 /* XCTest.framework */; };
@@ -56,7 +55,6 @@
 		BB2B57061838532900288708 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB2B57071838532900288708 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB2B570A1838532900288708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		BB2B570D1838532900288708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		BB2B57121838532900288708 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		BB2B57131838532900288708 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BB2B57151838532900288708 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				BB2B57061838532900288708 /* AppDelegate.h */,
 				BB2B57071838532900288708 /* AppDelegate.m */,
 				BB2B57091838532900288708 /* Main_iPhone.storyboard */,
-				BB2B570C1838532900288708 /* Main_iPad.storyboard */,
 				BB2B57151838532900288708 /* Images.xcassets */,
 				BB2B56FE1838532900288708 /* Supporting Files */,
 			);
@@ -311,7 +308,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8BE4F218395FEF00BD9266 /* cloud.png in Resources */,
-				BB2B570E1838532900288708 /* Main_iPad.storyboard in Resources */,
 				BB8BE4F41839604300BD9266 /* home.png in Resources */,
 				BB8BE4F61839609800BD9266 /* spanner.png in Resources */,
 				BB2B57161838532900288708 /* Images.xcassets in Resources */,
@@ -381,14 +377,6 @@
 				BB2B570A1838532900288708 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		BB2B570C1838532900288708 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB2B570D1838532900288708 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		BB2B57251838532900288708 /* InfoPlist.strings */ = {

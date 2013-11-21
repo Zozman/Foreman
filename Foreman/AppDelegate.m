@@ -3,7 +3,7 @@
 //  Foreman
 //
 //  Created by Zac Lovoy on 11/16/13.
-//  Copyright (c) 2013 Zozworks. All rights reserved.
+//  Copyright (c) 2013 Zac Lovoy. All rights reserved.
 //
 
 #import "AppDelegate.h"

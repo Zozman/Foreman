@@ -3,8 +3,9 @@
 //  Foreman
 //
 //  Created by Zac Lovoy on 11/16/13.
-//  Copyright (c) 2013 Zozworks. All rights reserved.
+//  Copyright (c) 2013 Zac Lovoy. All rights reserved.
 //
+//  Class that holds miscellaneous utility functions
 
 #import "Utilities.h"
 #import "UserData.h"
@@ -12,24 +13,32 @@
 
 @implementation Utilities
 
+// Function to get the location of the save file
 + (NSString *) saveFilePath
 {
+    // Get file path
 	NSArray *path =
 	NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    
+    // Return file path
 	return [[path objectAtIndex:0] stringByAppendingPathComponent:@"savefile.plist"];
     
 }
 
+// Function to save the API Key
 +(void)saveKey:(NSString*)key {
+    // Create array to save data
     NSArray *values = [[NSArray alloc] initWithObjects:key,nil];
+    // Save data to save file
     [values writeToFile:[self saveFilePath] atomically:YES];
 }
 
+// Function to retrieve the API Key
 +(NSString*)retrieveKey {
     NSString* key = [[NSString alloc]init];
     key = @"";
+    // Test if the save file exists
     BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:[Utilities saveFilePath]];
+    //If the file exists, retrieve the saved key from the save file
 	if (fileExists)
 	{
 		NSArray *values = [[NSArray alloc] initWithContentsOfFile:[Utilities saveFilePath]];
@@ -38,8 +47,10 @@
     return key;
 }
 
+// Function to convert the array of Workers to an Array that can be inserted into a table view
 +(NSMutableArray*)convertWorkerArrayToTableArray:(NSArray*)workerArray {
     NSMutableArray *output = [[NSMutableArray alloc] initWithCapacity:[workerArray count]*6];
+    // For each worker in the array, make rows with labels and data
     for (NSInteger x = 0, y = 0; x < [workerArray count]; x++, y += 6) {
         Worker *wkr = workerArray[x];
         NSMutableString *temp = [@"Name: " mutableCopy];
@@ -67,48 +78,10 @@
     return output;
 }
 
+// Function to convert UserData to an Array that can be inserted into a table view
 +(NSMutableArray*)convertUserDataToTableArray:(UserData*)data {
-    NSMutableArray *output = [[NSMutableArray alloc] initWithCapacity:8];
-    NSMutableString *temp = [@"Username: " mutableCopy];
-    [temp appendString:data.username];
-    output[0] = temp;
-    temp = [@"Hashrate: " mutableCopy];
-    [temp appendString:data.hashrate];
-    output[1] = temp;
-    temp = [@"Wallet Address: " mutableCopy];
-    [temp appendString:data.wallet];
-    output[2] = temp;
-    temp = [@"Send Threshold: " mutableCopy];
-    [temp appendString:data.sendThreshold];
-    [temp appendString:@" BTC"];
-    output[3] = temp;
-    temp = [@"Estimated Reward: " mutableCopy];
-    [temp appendString:data.estimatedReward];
-    [temp appendString:@" BTC"];
-    output[4] = temp;
-    temp = [@"Uncomfirmed Reward: " mutableCopy];
-    [temp appendString:data.unconfirmedReward];
-    [temp appendString:@" BTC"];
-    output[5] = temp;
-    temp = [@"Confirmed Reward: " mutableCopy];
-    [temp appendString:data.confirmedReward];
-    [temp appendString:@" BTC"];
-    output[6] = temp;
-    temp = [@"Total Reward: " mutableCopy];
-    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-    [f setNumberStyle:NSNumberFormatterDecimalStyle];
-    NSNumber *unconf = [f numberFromString:data.unconfirmedReward];
-    NSNumber *conf = [f numberFromString:data.confirmedReward];
-    NSNumber *sum = [NSNumber numberWithFloat:([unconf floatValue] + [conf floatValue])];
-    [temp appendString:[sum stringValue]];
-    [temp appendString:@" BTC"];
-    output[7] = temp;
-    
-    return output;
-}
-
-+(NSMutableArray*)convertUserDataToTableArray2:(UserData*)data {
     NSMutableArray *output = [[NSMutableArray alloc] initWithCapacity:16];
+    // Create alternating rows in array of labels and data
     output[0] = @"Username";
     output[1] = data.username;
     output[2] = @"Hashrate (Last 10 Rounds MH/s)";
@@ -132,6 +105,7 @@
     [temp appendString:@" BTC"];
     output[13] = temp;
     output[14] = @"Total Reward";
+    // Add up the unconfirmed and confirmed reward to get the total reward
     NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
     [f setNumberStyle:NSNumberFormatterDecimalStyle];
     NSNumber *unconf = [f numberFromString:data.unconfirmedReward];

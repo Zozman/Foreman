@@ -3,8 +3,9 @@
 //  Foreman
 //
 //  Created by Zac Lovoy on 11/16/13.
-//  Copyright (c) 2013 Zozworks. All rights reserved.
+//  Copyright (c) 2013 Zac Lovoy. All rights reserved.
 //
+//  This class is a model class to hold User Data returned from the server
 
 #import "UserData.h"
 

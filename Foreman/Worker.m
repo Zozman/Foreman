@@ -3,8 +3,9 @@
 //  Foreman
 //
 //  Created by Zac Lovoy on 11/16/13.
-//  Copyright (c) 2013 Zozworks. All rights reserved.
+//  Copyright (c) 2013 Zac Lovoy. All rights reserved.
 //
+//  Model class to hold the information about an individual worker
 
 #import "Worker.h"
 
@@ -16,9 +17,5 @@
 @synthesize lastShare;
 @synthesize score;
 @synthesize shares;
-
--(NSComparisonResult)compare:(Worker *)otherObject {
-    return [self.name compare:otherObject.name];
-}
 
 @end

@@ -5,6 +5,7 @@
 //  Created by Zac Lovoy on 11/17/13.
 //  Copyright (c) 2013 Zozworks. All rights reserved.
 //
+//  The class is the view controller for the Stats screen
 
 #import "Utilities.h"
 #import "UserData.h"
@@ -16,6 +17,8 @@
 @end
 
 @implementation StatsViewController {
+    // Members
+    // Holds the data stored in the table
     NSMutableArray *tableData;
 }
 
@@ -28,21 +31,22 @@
     return self;
 }
 
+// Function when the view is loaded for the first time
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    // Add padding to the top and bottom of the table
     self.edgesForExtendedLayout = UIRectEdgeAll;
     self.tableView.contentInset = UIEdgeInsetsMake(0., 0., CGRectGetHeight(self.tabBarController.tabBar.frame), 0);
     
+    // Add the "Pull To Refresh" option to the view
     UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
-    
     refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull to Refresh"];
-    
     [refresh addTarget:self action:@selector(updateData) forControlEvents:UIControlEventValueChanged];
-    
     self.refreshControl = refresh;
     
+    // Update the data in the table
     [self updateData];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -52,31 +56,43 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+// Function that runs to stop the "Pull To Refresh" animation
 - (void)stopRefresh
 {
     [self.refreshControl endRefreshing];
 }
 
+// Function to update the User Data in the table
 -(void)updateData {
+    // Retrieve the saved API Key
     NSString *key = [Utilities retrieveKey];
     
+    // If the API Key is not blank, retrieve the data
     if (![key  isEqual: @""]) {
         @try {
+            // Get the UserData from the server
             UserData *usData = [Json getUserData:key];
-            NSMutableArray *newData = [Utilities convertUserDataToTableArray2:usData];
+            // Convert the UserData into a table insertable form
+            NSMutableArray *newData = [Utilities convertUserDataToTableArray:usData];
             tableData = newData;
         }
+        // If the data can't be retrieved, display error
         @catch (NSException *e) {
             tableData = [NSMutableArray arrayWithObjects:@"No Data Found Pull To Refresh", nil];
         }
+    // If the API Key is blank, display message to enter Key on settings page
     } else {
         tableData = [NSMutableArray arrayWithObjects:@"Enter API Key In Settings Tab", nil];
     }
+    // End "Pull To Refresh" animation
     [self performSelector:@selector(stopRefresh) withObject:nil];
+    // Reload the table
     [self.tableView reloadData];
 }
 
+// Function that runs when the view goes back to this tab
 - (void)viewWillAppear:(BOOL)animated {
+    // Reload the table data in the background
     [super viewWillAppear:animated];
     dispatch_async(dispatch_get_global_queue(0, 0),
                    ^ {
@@ -91,19 +107,21 @@
 }
 
 #pragma mark - Table view data source
-
+// Function to return the number of sections in the table (used for table)
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
     return 1;
 }
 
+// Function to return the number of rows per section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
+    // Return the number of rows in the section (the number of rows in the tableData)
     return [tableData count];
 }
 
+// Function that populates the table view
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:nil];
@@ -112,9 +130,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     }
     
+    // Add text to table cell
     cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
     
-    
+    // If the row is a label row, turn it blue
     if (indexPath.row % 2 == 0) {
         cell.backgroundColor = [UIColor colorWithRed: 0.0 green: 0.0 blue: 1.0 alpha: 1.0];
         cell.textLabel.textColor = [UIColor whiteColor];
