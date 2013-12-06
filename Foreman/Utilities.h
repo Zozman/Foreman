@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UserData.h"
+#import "BitstampData.h"
 
 @interface Utilities : NSObject
 
@@ -22,5 +23,7 @@
 +(NSMutableArray*)convertWorkerArrayToTableArray:(NSArray*)workerArray;
 // Function to convert UserData to an Array that can be inserted into a table view
 +(NSMutableArray*)convertUserDataToTableArray:(UserData*)data;
+// Function to convert a BTC value to USD
++(NSMutableString*)btcToUsd:(BitstampData*)data value:(NSString*)value;
 
 @end

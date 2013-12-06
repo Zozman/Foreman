@@ -10,6 +10,7 @@
 #import "Utilities.h"
 #import "UserData.h"
 #import "Worker.h"
+#import "BitstampData.h"
 
 @implementation Utilities
 
@@ -116,6 +117,29 @@
     output[15] = temp;
     
     return output;
+}
+
+// Function to convert a BTC value to USD
++(NSMutableString*)btcToUsd:(BitstampData*)data value:(NSString*)value {
+    // Extract the BTC value from the string
+    NSString *btcString = [value substringToIndex:[value length] - 4];
+    // Calculate the USD value
+    double solutionDouble = [btcString doubleValue] * [data.last doubleValue];
+    // Format the value correctly
+    NSNumberFormatter *format = [[NSNumberFormatter alloc]init];
+    // Set to a decimal
+    [format setNumberStyle:NSNumberFormatterDecimalStyle];
+    // Round the value
+    [format setRoundingMode:NSNumberFormatterRoundHalfUp];
+    // 2 Decimal points
+    [format setMaximumFractionDigits:2];
+    [format setMinimumFractionDigits:2];
+    // Convert to a Mutable string
+    NSMutableString *answer = [[format stringFromNumber:[NSNumber numberWithFloat:solutionDouble]] mutableCopy];
+    // Add 'USD' to the answer
+    [answer appendString:@" USD"];
+    // Return the string
+    return answer;
 }
 
 @end

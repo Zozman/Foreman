@@ -3,7 +3,7 @@
 //  Foreman
 //
 //  Created by Zac Lovoy on 11/17/13.
-//  Copyright (c) 2013 Zozworks. All rights reserved.
+//  Copyright (c) 2013 Zac Lovoy. All rights reserved.
 //
 //  The class is the view controller for the Stats screen
 
@@ -11,6 +11,7 @@
 #import "UserData.h"
 #import "Json.h"
 #import "StatsViewController.h"
+#import "BitstampData.h"
 
 @interface StatsViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -20,6 +21,8 @@
     // Members
     // Holds the data stored in the table
     NSMutableArray *tableData;
+    // Holds current values of Bitcoins from Bitstamp
+    BitstampData *bd;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -43,7 +46,7 @@
     // Add the "Pull To Refresh" option to the view
     UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
     refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull to Refresh"];
-    [refresh addTarget:self action:@selector(updateData) forControlEvents:UIControlEventValueChanged];
+    [refresh addTarget:self action:@selector(pullUpdateData) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refresh;
     
     // Update the data in the table
@@ -64,6 +67,9 @@
 
 // Function to update the User Data in the table
 -(void)updateData {
+    // Refresh Bitstamp Data
+    bd = [Json getBitstampData];
+    
     // Retrieve the saved API Key
     NSString *key = [Utilities retrieveKey];
     
@@ -90,14 +96,19 @@
     [self.tableView reloadData];
 }
 
-// Function that runs when the view goes back to this tab
-- (void)viewWillAppear:(BOOL)animated {
-    // Reload the table data in the background
-    [super viewWillAppear:animated];
+// Update data after a pull to refresh asyncronously
+-(void)pullUpdateData {
     dispatch_async(dispatch_get_global_queue(0, 0),
                    ^ {
                        [self updateData];
                    });
+}
+
+// Function that runs when the view goes back to this tab
+- (void)viewWillAppear:(BOOL)animated {
+    // Reload the table data in the background
+    [super viewWillAppear:animated];
+    [self pullUpdateData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -127,7 +138,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:nil];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
     }
     
     // Add text to table cell
@@ -138,6 +149,16 @@
         cell.backgroundColor = [UIColor colorWithRed: 0.0 green: 0.0 blue: 1.0 alpha: 1.0];
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+    }
+    
+    // If it is the wallet address row, shrink the font size so it will actually fit
+    if (indexPath.row == 5) {
+        cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:15.0];
+    }
+    
+    // If the cell is showing a BTC amount, show the USD value as a subtitle
+    if (indexPath.row == 7 || indexPath.row == 9 || indexPath.row == 11 || indexPath.row == 13 || indexPath.row == 15) {
+        cell.detailTextLabel.text = [Utilities btcToUsd:bd value:[tableData objectAtIndex:indexPath.row]];
     }
     
     return cell;

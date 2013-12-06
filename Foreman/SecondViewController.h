@@ -27,5 +27,7 @@
 - (IBAction)appByButton:(id)sender;
 // Icon By Button Action
 - (IBAction)iconByButton:(id)sender;
+// Prices By Button Action
+- (IBAction)pricesByButton:(id)sender;
 
 @end

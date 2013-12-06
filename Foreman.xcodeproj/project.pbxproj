@@ -31,6 +31,7 @@
 		BB8BE4F218395FEF00BD9266 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8BE4F118395FEF00BD9266 /* cloud.png */; };
 		BB8BE4F41839604300BD9266 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8BE4F31839604300BD9266 /* home.png */; };
 		BB8BE4F61839609800BD9266 /* spanner.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8BE4F51839609800BD9266 /* spanner.png */; };
+		BBB97D17185145CC006D6D4F /* BitstampData.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB97D16185145CC006D6D4F /* BitstampData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		BB8BE4F118395FEF00BD9266 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		BB8BE4F31839604300BD9266 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		BB8BE4F51839609800BD9266 /* spanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spanner.png; sourceTree = "<group>"; };
+		BBB97D15185145CC006D6D4F /* BitstampData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitstampData.h; sourceTree = "<group>"; };
+		BBB97D16185145CC006D6D4F /* BitstampData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitstampData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,8 @@
 				BB2B573918385ABE00288708 /* UserData.m */,
 				BB2B5743183876B100288708 /* Worker.h */,
 				BB2B5744183876B100288708 /* Worker.m */,
+				BBB97D15185145CC006D6D4F /* BitstampData.h */,
+				BBB97D16185145CC006D6D4F /* BitstampData.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB97D17185145CC006D6D4F /* BitstampData.m in Sources */,
 				BB2B57141838532900288708 /* SecondViewController.m in Sources */,
 				BB2B57081838532900288708 /* AppDelegate.m in Sources */,
 				BB2B573D18385AF300288708 /* Json.m in Sources */,

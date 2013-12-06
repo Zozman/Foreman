@@ -68,4 +68,10 @@
     // Open the page in your default web browser
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://iconbeast.com"]];
 }
+
+// Function that runs when the "Bitcoin Prices By" button is pressed
+- (IBAction)pricesByButton:(id)sender {
+    // Open the page in your default web browser
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://bitstamp.net"]];
+}
 @end

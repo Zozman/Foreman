@@ -10,6 +10,7 @@
 #import "Json.h"
 #import "UserData.h"
 #import "Worker.h"
+#import "BitstampData.h"
 
 @implementation Json
 
@@ -87,4 +88,35 @@
     return user;
 }
 
+// Function to get the current Bitcoin Price data from Bitstamp
++(BitstampData*)getBitstampData {
+    BitstampData *bd = [[BitstampData alloc]init];
+    // Start building the command
+    NSMutableString *command = [[NSMutableString alloc] init];
+    // Set URL
+    [command appendString:@"https://www.bitstamp.net/api/ticker/"];
+    // Run json command
+    NSMutableData *resultData = [self sendJsonCommandToData:command];
+    
+    // Decode result
+    NSError *e = nil;
+    NSMutableDictionary *jsonArray = [NSJSONSerialization JSONObjectWithData:resultData options:NSJSONReadingMutableContainers error: &e];
+    
+    // Try to decode result
+    @try {
+        bd.volume = [jsonArray valueForKey:@"volume"];
+        bd.high = [jsonArray valueForKey:@"high"];
+        bd.last = [jsonArray valueForKey:@"last"];
+        bd.ask = [jsonArray valueForKey:@"ask"];
+        bd.bid = [jsonArray valueForKey:@"bid"];
+        bd.timestamp = [jsonArray valueForKey:@"timestamp"];
+        bd.low = [jsonArray valueForKey:@"low"];
+    }
+    // If bad data, set return data to nil
+    @catch (NSException *e) {
+        bd = nil;
+    }
+    // Return Bitstamp Data
+    return bd;
+}
 @end

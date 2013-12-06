@@ -49,7 +49,7 @@
     // Add the "Pull To Refresh" option to the view
     UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
     refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull to Refresh"];
-    [refresh addTarget:self action:@selector(updateData) forControlEvents:UIControlEventValueChanged];
+    [refresh addTarget:self action:@selector(pullUpdateData) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refresh;
     
     
@@ -73,7 +73,7 @@
     [self.refreshControl endRefreshing];
 }
 
-// Function to update the table
+// Function to update the table in the background
 -(void)updateData {
     // Get the saved API key
      NSString *key = [Utilities retrieveKey];
@@ -116,6 +116,11 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     // Reload the table data in the background
+    [self pullUpdateData];
+}
+
+// Update data after a pull to refresh asyncronously
+-(void)pullUpdateData {
     dispatch_async(dispatch_get_global_queue(0, 0),
                    ^ {
                        [self updateData];
