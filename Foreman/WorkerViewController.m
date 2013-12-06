@@ -43,8 +43,6 @@
     self.edgesForExtendedLayout = UIRectEdgeAll;
     self.tableView.contentInset = UIEdgeInsetsMake(0., 0., CGRectGetHeight(self.tabBarController.tabBar.frame), 0);
     
-    // Update the data in the table
-    [self updateData];
     
     // Add the "Pull To Refresh" option to the view
     UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
@@ -52,6 +50,8 @@
     [refresh addTarget:self action:@selector(pullUpdateData) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refresh;
     
+    // Update the data in the table
+    [self updateData];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
