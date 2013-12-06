@@ -167,7 +167,10 @@
     
     // If the cell is showing a BTC amount, show the USD value as a subtitle
     if (indexPath.row == 7 || indexPath.row == 9 || indexPath.row == 11 || indexPath.row == 13 || indexPath.row == 15) {
-        cell.detailTextLabel.text = [Utilities btcToUsd:bd value:[tableData objectAtIndex:indexPath.row]];
+        // If Bitstamp data is available
+        if (bd != nil) {
+            cell.detailTextLabel.text = [Utilities btcToUsd:bd value:[tableData objectAtIndex:indexPath.row]];
+        }
     }
     
     return cell;
@@ -189,6 +192,7 @@
     // Create alert view
     CustomIOS7AlertView *alertView = [[CustomIOS7AlertView alloc] init];
     [alertView setContainerView:qrcodeImageView];
+    [alertView setButtonTitles:[NSArray arrayWithObjects: @"Done",nil]];
     // Display alert view
     [alertView show];
 }

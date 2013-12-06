@@ -11,6 +11,7 @@
 #import "Alerts.h"
 #import "SecondViewController.h"
 #import "CustomIOS7AlertView.h"
+#import "AboutViewController.h"
 
 @interface SecondViewController () <UITextFieldDelegate>
 
@@ -79,6 +80,12 @@
 // Function to display details about legal stuff
 - (IBAction)aboutButton:(id)sender {
     // Display legal alert
-    [Alerts aboutAlert];
+    AboutViewController *avc = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+    // Create alert view
+    CustomIOS7AlertView *alertView = [[CustomIOS7AlertView alloc] init];
+    [alertView setContainerView:avc.view];
+    [alertView setButtonTitles:[NSArray arrayWithObjects: @"Done",nil]];
+    // Display alert view
+    [alertView show];
 }
 @end

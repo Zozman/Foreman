@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB043E8018526CE20078AA89 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB043E7E18526CE20078AA89 /* AboutViewController.m */; };
+		BB043E8118526CE20078AA89 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB043E7F18526CE20078AA89 /* AboutViewController.xib */; };
 		BB2B56F81838532900288708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B56F71838532900288708 /* Foundation.framework */; };
 		BB2B56FA1838532900288708 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B56F91838532900288708 /* CoreGraphics.framework */; };
 		BB2B56FC1838532900288708 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B56FB1838532900288708 /* UIKit.framework */; };
@@ -56,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB043E7D18526CE20078AA89 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		BB043E7E18526CE20078AA89 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		BB043E7F18526CE20078AA89 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		BB2B56F41838532900288708 /* Foreman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foreman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2B56F71838532900288708 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB2B56F91838532900288708 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -303,6 +308,9 @@
 				BB8BE4EA1839106200BD9266 /* WorkerViewController.m */,
 				BB8BE4EC1839533B00BD9266 /* StatsViewController.h */,
 				BB8BE4ED1839533B00BD9266 /* StatsViewController.m */,
+				BB043E7D18526CE20078AA89 /* AboutViewController.h */,
+				BB043E7E18526CE20078AA89 /* AboutViewController.m */,
+				BB043E7F18526CE20078AA89 /* AboutViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -397,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8BE4F218395FEF00BD9266 /* cloud.png in Resources */,
+				BB043E8118526CE20078AA89 /* AboutViewController.xib in Resources */,
 				BB8BE4F41839604300BD9266 /* home.png in Resources */,
 				BB8BE4F61839609800BD9266 /* spanner.png in Resources */,
 				BB2B57161838532900288708 /* Images.xcassets in Resources */,
@@ -442,6 +451,7 @@
 				BB2B5745183876B100288708 /* Worker.m in Sources */,
 				BB2B57341838585300288708 /* Utilities.m in Sources */,
 				BB5B20F11851744D00938B19 /* UIImage+QRCodeGenerator.m in Sources */,
+				BB043E8018526CE20078AA89 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
