@@ -12,6 +12,8 @@
 #import "Json.h"
 #import "StatsViewController.h"
 #import "BitstampData.h"
+#import "UIImage+QRCodeGenerator.h"
+#import "CustomIOS7AlertView.h"
 
 @interface StatsViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -152,8 +154,15 @@
     }
     
     // If it is the wallet address row, shrink the font size so it will actually fit
+    //   And add function to generate Bitcoin Address QR Code
     if (indexPath.row == 5) {
-        cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:15.0];
+        cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:10.0];
+        cell.detailTextLabel.text = @"Double Tap For QR Code";
+        cell.detailTextLabel.font = [UIFont fontWithName:@"Helvetica" size:8.0];
+        cell.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(makeQRAlert:)];
+        [tap setNumberOfTapsRequired:2];
+        [cell.contentView addGestureRecognizer:tap];
     }
     
     // If the cell is showing a BTC amount, show the USD value as a subtitle
@@ -162,6 +171,26 @@
     }
     
     return cell;
+}
+
+// Function to create and display a QR code of wallet address
+- (IBAction)makeQRAlert:(id)sender{
+    // Create frame for ImageView
+    UIImageView *qrcodeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,300,300)];
+    // Create BTC link
+    NSMutableString *linkString = [@"bitcoin:" mutableCopy];
+    [linkString appendString:tableData[5]];
+    // Create QR Image
+    qrcodeImageView.image = [UIImage QRCodeGenerator:linkString
+                                      andLightColour:[UIColor whiteColor]
+                                       andDarkColour:[UIColor blackColor]
+                                        andQuietZone:1
+                                             andSize:300];
+    // Create alert view
+    CustomIOS7AlertView *alertView = [[CustomIOS7AlertView alloc] init];
+    [alertView setContainerView:qrcodeImageView];
+    // Display alert view
+    [alertView show];
 }
 
 /*

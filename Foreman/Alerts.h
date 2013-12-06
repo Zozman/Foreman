@@ -15,5 +15,7 @@
 +(void)badKeyAlert;
 // Function for an alert when the API Key is saved
 +(void)saveKey;
+// Function for an alert with legal details
++(void)aboutAlert;
 
 @end

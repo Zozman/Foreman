@@ -121,6 +121,8 @@
 
 // Function to convert a BTC value to USD
 +(NSMutableString*)btcToUsd:(BitstampData*)data value:(NSString*)value {
+    // Create answer string
+    NSMutableString *answer = [@"$" mutableCopy];
     // Extract the BTC value from the string
     NSString *btcString = [value substringToIndex:[value length] - 4];
     // Calculate the USD value
@@ -134,8 +136,8 @@
     // 2 Decimal points
     [format setMaximumFractionDigits:2];
     [format setMinimumFractionDigits:2];
-    // Convert to a Mutable string
-    NSMutableString *answer = [[format stringFromNumber:[NSNumber numberWithFloat:solutionDouble]] mutableCopy];
+    // Add answer to mutable string
+    [answer appendString:[[format stringFromNumber:[NSNumber numberWithFloat:solutionDouble]] mutableCopy]];
     // Add 'USD' to the answer
     [answer appendString:@" USD"];
     // Return the string

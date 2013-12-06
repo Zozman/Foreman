@@ -26,6 +26,17 @@
 		BB2B573D18385AF300288708 /* Json.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B573C18385AF300288708 /* Json.m */; };
 		BB2B57401838657200288708 /* Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B573F1838657200288708 /* Alerts.m */; };
 		BB2B5745183876B100288708 /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B5744183876B100288708 /* Worker.m */; };
+		BB5B20D01851609F00938B19 /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20CF1851609F00938B19 /* CustomIOS7AlertView.m */; };
+		BB5B20E61851741400938B19 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20D21851741400938B19 /* bitstream.c */; };
+		BB5B20E71851741400938B19 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20D51851741400938B19 /* mask.c */; };
+		BB5B20E81851741400938B19 /* mmask.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20D71851741400938B19 /* mmask.c */; };
+		BB5B20E91851741400938B19 /* mqrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20D91851741400938B19 /* mqrspec.c */; };
+		BB5B20EA1851741400938B19 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20DB1851741400938B19 /* qrencode.c */; };
+		BB5B20EB1851741400938B19 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20DE1851741400938B19 /* qrinput.c */; };
+		BB5B20EC1851741400938B19 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20E01851741400938B19 /* qrspec.c */; };
+		BB5B20ED1851741400938B19 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20E21851741400938B19 /* rscode.c */; };
+		BB5B20EE1851741400938B19 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20E41851741400938B19 /* split.c */; };
+		BB5B20F11851744D00938B19 /* UIImage+QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20F01851744D00938B19 /* UIImage+QRCodeGenerator.m */; };
 		BB8BE4EB1839106200BD9266 /* WorkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8BE4EA1839106200BD9266 /* WorkerViewController.m */; };
 		BB8BE4EE1839533B00BD9266 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8BE4ED1839533B00BD9266 /* StatsViewController.m */; };
 		BB8BE4F218395FEF00BD9266 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8BE4F118395FEF00BD9266 /* cloud.png */; };
@@ -74,6 +85,30 @@
 		BB2B573F1838657200288708 /* Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alerts.m; sourceTree = "<group>"; };
 		BB2B5743183876B100288708 /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
 		BB2B5744183876B100288708 /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
+		BB5B20CE1851609F00938B19 /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
+		BB5B20CF1851609F00938B19 /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
+		BB5B20D21851741400938B19 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		BB5B20D31851741400938B19 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		BB5B20D41851741400938B19 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		BB5B20D51851741400938B19 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		BB5B20D61851741400938B19 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		BB5B20D71851741400938B19 /* mmask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mmask.c; sourceTree = "<group>"; };
+		BB5B20D81851741400938B19 /* mmask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmask.h; sourceTree = "<group>"; };
+		BB5B20D91851741400938B19 /* mqrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mqrspec.c; sourceTree = "<group>"; };
+		BB5B20DA1851741400938B19 /* mqrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqrspec.h; sourceTree = "<group>"; };
+		BB5B20DB1851741400938B19 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		BB5B20DC1851741400938B19 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		BB5B20DD1851741400938B19 /* qrencode_inner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode_inner.h; sourceTree = "<group>"; };
+		BB5B20DE1851741400938B19 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		BB5B20DF1851741400938B19 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		BB5B20E01851741400938B19 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		BB5B20E11851741400938B19 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		BB5B20E21851741400938B19 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		BB5B20E31851741400938B19 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		BB5B20E41851741400938B19 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		BB5B20E51851741400938B19 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		BB5B20EF1851744D00938B19 /* UIImage+QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QRCodeGenerator.h"; sourceTree = "<group>"; };
+		BB5B20F01851744D00938B19 /* UIImage+QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QRCodeGenerator.m"; sourceTree = "<group>"; };
 		BB8BE4E91839106200BD9266 /* WorkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkerViewController.h; sourceTree = "<group>"; };
 		BB8BE4EA1839106200BD9266 /* WorkerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkerViewController.m; sourceTree = "<group>"; };
 		BB8BE4EC1839533B00BD9266 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
@@ -142,6 +177,7 @@
 		BB2B56FD1838532900288708 /* Foreman */ = {
 			isa = PBXGroup;
 			children = (
+				BB5B20C018515EBA00938B19 /* Libraries */,
 				BB8BE4EF18395F5F00BD9266 /* View Controllers */,
 				BB2B57421838724D00288708 /* Models */,
 				BB2B57411838722C00288708 /* Utilities */,
@@ -208,6 +244,54 @@
 				BBB97D16185145CC006D6D4F /* BitstampData.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		BB5B20C018515EBA00938B19 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				BB5B20EF1851744D00938B19 /* UIImage+QRCodeGenerator.h */,
+				BB5B20F01851744D00938B19 /* UIImage+QRCodeGenerator.m */,
+				BB5B20D11851741400938B19 /* qrencode */,
+				BB5B20CD1851609F00938B19 /* CustomiOSAlertView */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		BB5B20CD1851609F00938B19 /* CustomiOSAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				BB5B20CE1851609F00938B19 /* CustomIOS7AlertView.h */,
+				BB5B20CF1851609F00938B19 /* CustomIOS7AlertView.m */,
+			);
+			name = CustomiOSAlertView;
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB5B20D11851741400938B19 /* qrencode */ = {
+			isa = PBXGroup;
+			children = (
+				BB5B20D21851741400938B19 /* bitstream.c */,
+				BB5B20D31851741400938B19 /* bitstream.h */,
+				BB5B20D41851741400938B19 /* config.h */,
+				BB5B20D51851741400938B19 /* mask.c */,
+				BB5B20D61851741400938B19 /* mask.h */,
+				BB5B20D71851741400938B19 /* mmask.c */,
+				BB5B20D81851741400938B19 /* mmask.h */,
+				BB5B20D91851741400938B19 /* mqrspec.c */,
+				BB5B20DA1851741400938B19 /* mqrspec.h */,
+				BB5B20DB1851741400938B19 /* qrencode.c */,
+				BB5B20DC1851741400938B19 /* qrencode.h */,
+				BB5B20DD1851741400938B19 /* qrencode_inner.h */,
+				BB5B20DE1851741400938B19 /* qrinput.c */,
+				BB5B20DF1851741400938B19 /* qrinput.h */,
+				BB5B20E01851741400938B19 /* qrspec.c */,
+				BB5B20E11851741400938B19 /* qrspec.h */,
+				BB5B20E21851741400938B19 /* rscode.c */,
+				BB5B20E31851741400938B19 /* rscode.h */,
+				BB5B20E41851741400938B19 /* split.c */,
+				BB5B20E51851741400938B19 /* split.h */,
+			);
+			path = qrencode;
 			sourceTree = "<group>";
 		};
 		BB8BE4EF18395F5F00BD9266 /* View Controllers */ = {
@@ -336,17 +420,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5B20E81851741400938B19 /* mmask.c in Sources */,
 				BBB97D17185145CC006D6D4F /* BitstampData.m in Sources */,
 				BB2B57141838532900288708 /* SecondViewController.m in Sources */,
 				BB2B57081838532900288708 /* AppDelegate.m in Sources */,
+				BB5B20D01851609F00938B19 /* CustomIOS7AlertView.m in Sources */,
+				BB5B20EB1851741400938B19 /* qrinput.c in Sources */,
+				BB5B20E91851741400938B19 /* mqrspec.c in Sources */,
 				BB2B573D18385AF300288708 /* Json.m in Sources */,
+				BB5B20E61851741400938B19 /* bitstream.c in Sources */,
+				BB5B20EA1851741400938B19 /* qrencode.c in Sources */,
 				BB8BE4EE1839533B00BD9266 /* StatsViewController.m in Sources */,
 				BB8BE4EB1839106200BD9266 /* WorkerViewController.m in Sources */,
+				BB5B20EE1851741400938B19 /* split.c in Sources */,
 				BB2B57041838532900288708 /* main.m in Sources */,
+				BB5B20ED1851741400938B19 /* rscode.c in Sources */,
 				BB2B573A18385ABE00288708 /* UserData.m in Sources */,
 				BB2B57401838657200288708 /* Alerts.m in Sources */,
+				BB5B20E71851741400938B19 /* mask.c in Sources */,
+				BB5B20EC1851741400938B19 /* qrspec.c in Sources */,
 				BB2B5745183876B100288708 /* Worker.m in Sources */,
 				BB2B57341838585300288708 /* Utilities.m in Sources */,
+				BB5B20F11851744D00938B19 /* UIImage+QRCodeGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

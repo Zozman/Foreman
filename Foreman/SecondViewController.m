@@ -10,6 +10,7 @@
 #import "Utilities.h"
 #import "Alerts.h"
 #import "SecondViewController.h"
+#import "CustomIOS7AlertView.h"
 
 @interface SecondViewController () <UITextFieldDelegate>
 
@@ -73,5 +74,11 @@
 - (IBAction)pricesByButton:(id)sender {
     // Open the page in your default web browser
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://bitstamp.net"]];
+}
+
+// Function to display details about legal stuff
+- (IBAction)aboutButton:(id)sender {
+    // Display legal alert
+    [Alerts aboutAlert];
 }
 @end
