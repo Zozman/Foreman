@@ -8,3 +8,5 @@ To use, enter API key in Settings Tab and then just pull to refresh on any other
 All APIs owned by their perspective owners.  I am merely putting out the app to look at the data.
 
 Tab icons by www.iconbeast.com
+
+Bitcoin pricing by www.bitstamp.com
