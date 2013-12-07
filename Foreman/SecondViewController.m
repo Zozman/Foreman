@@ -12,6 +12,7 @@
 #import "SecondViewController.h"
 #import "CustomIOS7AlertView.h"
 #import "AboutViewController.h"
+#import "DonateViewController.h"
 
 @interface SecondViewController () <UITextFieldDelegate>
 
@@ -81,6 +82,18 @@
 - (IBAction)aboutButton:(id)sender {
     // Display legal alert
     AboutViewController *avc = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+    // Create alert view
+    CustomIOS7AlertView *alertView = [[CustomIOS7AlertView alloc] init];
+    [alertView setContainerView:avc.view];
+    [alertView setButtonTitles:[NSArray arrayWithObjects: @"Done",nil]];
+    // Display alert view
+    [alertView show];
+}
+
+// Function to display donation information
+- (IBAction)donateButton:(id)sender {
+    // Display donation stuff
+    DonateViewController *avc = [[DonateViewController alloc] initWithNibName:@"DonateViewController" bundle:nil];
     // Create alert view
     CustomIOS7AlertView *alertView = [[CustomIOS7AlertView alloc] init];
     [alertView setContainerView:avc.view];

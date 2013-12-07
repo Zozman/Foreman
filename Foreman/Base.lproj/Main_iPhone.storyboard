@@ -169,6 +169,12 @@
                                             <action selector="aboutButton:" destination="QUy-BD-bpt" id="Ipn-LJ-vyd"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BYs-El-rk0"/>
+                                    <barButtonItem title="Donate" id="7Ak-y6-Jgm">
+                                        <connections>
+                                            <action selector="donateButton:" destination="QUy-BD-bpt" id="xzh-fU-G8z"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>

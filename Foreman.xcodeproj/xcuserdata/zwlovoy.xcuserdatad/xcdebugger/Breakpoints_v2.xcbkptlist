@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Foreman/SecondViewController.m"
-            timestampString = "408056700.729068"
+            timestampString = "408085131.504105"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-aboutButton:"
             landmarkType = "5">
          </BreakpointContent>

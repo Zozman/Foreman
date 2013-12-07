@@ -29,6 +29,9 @@
 		BB2B573D18385AF300288708 /* Json.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B573C18385AF300288708 /* Json.m */; };
 		BB2B57401838657200288708 /* Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B573F1838657200288708 /* Alerts.m */; };
 		BB2B5745183876B100288708 /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B5744183876B100288708 /* Worker.m */; };
+		BB41BD201852E12F001387FB /* DonateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB41BD1E1852E12F001387FB /* DonateViewController.m */; };
+		BB41BD211852E12F001387FB /* DonateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB41BD1F1852E12F001387FB /* DonateViewController.xib */; };
+		BB41BD231852E1BC001387FB /* donateQR.png in Resources */ = {isa = PBXBuildFile; fileRef = BB41BD221852E1BC001387FB /* donateQR.png */; };
 		BB5B20D01851609F00938B19 /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20CF1851609F00938B19 /* CustomIOS7AlertView.m */; };
 		BB5B20E61851741400938B19 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20D21851741400938B19 /* bitstream.c */; };
 		BB5B20E71851741400938B19 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5B20D51851741400938B19 /* mask.c */; };
@@ -92,6 +95,10 @@
 		BB2B573F1838657200288708 /* Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alerts.m; sourceTree = "<group>"; };
 		BB2B5743183876B100288708 /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
 		BB2B5744183876B100288708 /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
+		BB41BD1D1852E12F001387FB /* DonateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonateViewController.h; sourceTree = "<group>"; };
+		BB41BD1E1852E12F001387FB /* DonateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonateViewController.m; sourceTree = "<group>"; };
+		BB41BD1F1852E12F001387FB /* DonateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DonateViewController.xib; sourceTree = "<group>"; };
+		BB41BD221852E1BC001387FB /* donateQR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donateQR.png; sourceTree = "<group>"; };
 		BB5B20CE1851609F00938B19 /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
 		BB5B20CF1851609F00938B19 /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
 		BB5B20D21851741400938B19 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
@@ -314,6 +321,9 @@
 				BB043E7D18526CE20078AA89 /* AboutViewController.h */,
 				BB043E7E18526CE20078AA89 /* AboutViewController.m */,
 				BB043E7F18526CE20078AA89 /* AboutViewController.xib */,
+				BB41BD1D1852E12F001387FB /* DonateViewController.h */,
+				BB41BD1E1852E12F001387FB /* DonateViewController.m */,
+				BB41BD1F1852E12F001387FB /* DonateViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -321,6 +331,7 @@
 		BB8BE4F018395F7700BD9266 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BB41BD221852E1BC001387FB /* donateQR.png */,
 				BB8BE4F118395FEF00BD9266 /* cloud.png */,
 				BB8BE4F31839604300BD9266 /* home.png */,
 				BB8BE4F51839609800BD9266 /* spanner.png */,
@@ -411,8 +422,10 @@
 				BB043E8118526CE20078AA89 /* AboutViewController.xib in Resources */,
 				BB0487BE1852DD9800EADEF2 /* Main_iPhoneSmall.storyboard in Resources */,
 				BB8BE4F41839604300BD9266 /* home.png in Resources */,
+				BB41BD211852E12F001387FB /* DonateViewController.xib in Resources */,
 				BB8BE4F61839609800BD9266 /* spanner.png in Resources */,
 				BB2B57161838532900288708 /* Images.xcassets in Resources */,
+				BB41BD231852E1BC001387FB /* donateQR.png in Resources */,
 				BB2B570B1838532900288708 /* Main_iPhone.storyboard in Resources */,
 				BB2B57021838532900288708 /* InfoPlist.strings in Resources */,
 			);
@@ -452,6 +465,7 @@
 				BB2B57401838657200288708 /* Alerts.m in Sources */,
 				BB5B20E71851741400938B19 /* mask.c in Sources */,
 				BB5B20EC1851741400938B19 /* qrspec.c in Sources */,
+				BB41BD201852E12F001387FB /* DonateViewController.m in Sources */,
 				BB2B5745183876B100288708 /* Worker.m in Sources */,
 				BB2B57341838585300288708 /* Utilities.m in Sources */,
 				BB5B20F11851744D00938B19 /* UIImage+QRCodeGenerator.m in Sources */,

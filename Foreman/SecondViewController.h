@@ -31,5 +31,7 @@
 - (IBAction)pricesByButton:(id)sender;
 // About Button Action
 - (IBAction)aboutButton:(id)sender;
+// Donate Button Action
+- (IBAction)donateButton:(id)sender;
 
 @end
