@@ -14,6 +14,7 @@
 #import "BitstampData.h"
 #import "UIImage+QRCodeGenerator.h"
 #import "CustomIOS7AlertView.h"
+#import <dispatch/dispatch.h>
 
 @interface StatsViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -25,6 +26,8 @@
     NSMutableArray *tableData;
     // Holds current values of Bitcoins from Bitstamp
     BitstampData *bd;
+    // Queue used for background tasks
+    dispatch_queue_t backgroundQueue;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -41,6 +44,8 @@
 {
     [super viewDidLoad];
     
+    backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+    
     // Add padding to the top and bottom of the table
     self.edgesForExtendedLayout = UIRectEdgeAll;
     self.tableView.contentInset = UIEdgeInsetsMake(0., 0., CGRectGetHeight(self.tabBarController.tabBar.frame), 0);
@@ -52,7 +57,17 @@
     self.refreshControl = refresh;
     
     // Update the data in the table
-    [self updateData];
+    dispatch_async(backgroundQueue,
+                   ^ {
+                       // Start animating update
+                       [_spinningUpdater startAnimating];
+                       // Update data
+                       [self updateData];
+                       // Update table
+                       [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+                       // Stop aniation
+                       [_spinningUpdater performSelectorOnMainThread:@selector(stopAnimating) withObject:nil waitUntilDone:NO];
+                   });
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -100,7 +115,7 @@
 
 // Update data after a pull to refresh asyncronously
 -(void)pullUpdateData {
-    dispatch_async(dispatch_get_global_queue(0, 0),
+    dispatch_async(backgroundQueue,
                    ^ {
                        [self updateData];
                    });

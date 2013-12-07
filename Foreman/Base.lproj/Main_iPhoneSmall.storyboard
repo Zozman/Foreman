@@ -13,6 +13,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="XvX-kI-6Co">
+                            <rect key="frame" x="0.0" y="109" width="320" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="2lK-ot-W5i">
                                 <rect key="frame" x="0.0" y="55" width="320" height="44"/>
@@ -30,6 +35,9 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Stats" image="home.png" id="2cw-h4-Les"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="spinningUpdater" destination="XvX-kI-6Co" id="67a-Zh-NhX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tO4-2M-nAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,6 +51,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="YL9-PH-5Lr">
+                            <rect key="frame" x="0.0" y="109" width="320" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fLd-Qc-lLK">
                                 <rect key="frame" x="0.0" y="55" width="320" height="44"/>
@@ -61,6 +74,7 @@
                     <tabBarItem key="tabBarItem" title="Workers" image="cloud.png" id="5PF-00-QMp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="spinningIndicator" destination="YL9-PH-5Lr" id="S0z-Uy-yfh"/>
                         <outlet property="tableView" destination="JLf-bm-Y1L" id="9iy-03-ylr"/>
                     </connections>
                 </tableViewController>

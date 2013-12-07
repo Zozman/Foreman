@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <UIKit/UIKit.h>
+#import "WorkerViewController.h"
 
 @implementation AppDelegate
 
@@ -17,6 +19,7 @@
     // Code to use alternative storyboard if a 3.5 inch iPhone is used
     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
         UIStoryboard *storyBoard;
+        UITabBarController *initViewController;
         
         // Get current size of the screem
         CGSize result = [[UIScreen mainScreen] bounds].size;
@@ -25,12 +28,22 @@
         
         // If the screen is the 3.5 in size, use the smaller storyboard
         if(result.height == 960){
-            NSLog(@"FIRED");
             storyBoard = [UIStoryboard storyboardWithName:@"Main_iPhoneSmall" bundle:nil];
-            UIViewController *initViewController = [storyBoard instantiateInitialViewController];
+            initViewController = [storyBoard instantiateInitialViewController];
             [self.window setRootViewController:initViewController];
         }
+        else {
+            storyBoard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+            initViewController = [storyBoard instantiateInitialViewController];
+            [self.window setRootViewController:initViewController];
+        }
+        // Tell the app to load the other tabs (and the worker data) as soon as the app starts
+        for(UIViewController * viewController in  initViewController.viewControllers){
+            viewController.view;
+        }
     }
+    
+    
     return YES;
 }
 							

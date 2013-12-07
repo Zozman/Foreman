@@ -12,5 +12,7 @@
 @interface WorkerViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 // Main table view in the tab view
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+// Indicator for initial update
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinningIndicator;
 
 @end

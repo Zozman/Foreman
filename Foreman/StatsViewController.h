@@ -11,4 +11,7 @@
 
 @interface StatsViewController : UITableViewController
 
+// Indicator for initial update
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinningUpdater;
+
 @end
