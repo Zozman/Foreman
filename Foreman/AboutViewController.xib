@@ -24,7 +24,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <string key="text">Note: This app is only for use with the mining.bitcoin.cz pool (for now anyway).  This app is merely a tool to access APIs owned by the pool and claims no ownership over these API's nor responsibility.  Utilizes Custom iOS 7 AlertView (https://github.com/wimagguc/ios-custom-alertview) and QR Code Implementation by Oscar Sanderson (http://www.oscarsanderson.com/2013/08/12/implementing-a-qr-code-generator-on-the-iphone) and libqrencode (http://fukuchi.org/works/qrencode/index.html.en)</string>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             <dataDetectorType key="dataDetectorTypes" link="YES"/>
                         </textView>

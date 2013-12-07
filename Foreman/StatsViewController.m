@@ -44,6 +44,7 @@
 {
     [super viewDidLoad];
     
+    // Initialize background task queue
     backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
     
     // Add padding to the top and bottom of the table

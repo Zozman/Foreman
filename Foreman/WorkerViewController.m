@@ -42,7 +42,8 @@
 {
     [super viewDidLoad];
     
-    backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+    // Initialize background action queue
+    backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     // Add padding to the top and bottom of the table
     self.edgesForExtendedLayout = UIRectEdgeAll;
