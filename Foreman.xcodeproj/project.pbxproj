@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BB043E8018526CE20078AA89 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB043E7E18526CE20078AA89 /* AboutViewController.m */; };
 		BB043E8118526CE20078AA89 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB043E7F18526CE20078AA89 /* AboutViewController.xib */; };
+		BB0487BE1852DD9800EADEF2 /* Main_iPhoneSmall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0487BC1852DD9800EADEF2 /* Main_iPhoneSmall.storyboard */; };
 		BB2B56F81838532900288708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B56F71838532900288708 /* Foundation.framework */; };
 		BB2B56FA1838532900288708 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B56F91838532900288708 /* CoreGraphics.framework */; };
 		BB2B56FC1838532900288708 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B56FB1838532900288708 /* UIKit.framework */; };
@@ -61,6 +62,7 @@
 		BB043E7D18526CE20078AA89 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		BB043E7E18526CE20078AA89 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		BB043E7F18526CE20078AA89 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		BB0487BD1852DD9800EADEF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhoneSmall.storyboard; sourceTree = "<group>"; };
 		BB2B56F41838532900288708 /* Foreman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foreman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2B56F71838532900288708 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB2B56F91838532900288708 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -189,6 +191,7 @@
 				BB2B57061838532900288708 /* AppDelegate.h */,
 				BB2B57071838532900288708 /* AppDelegate.m */,
 				BB2B57091838532900288708 /* Main_iPhone.storyboard */,
+				BB0487BC1852DD9800EADEF2 /* Main_iPhoneSmall.storyboard */,
 				BB2B57151838532900288708 /* Images.xcassets */,
 				BB2B56FE1838532900288708 /* Supporting Files */,
 			);
@@ -406,6 +409,7 @@
 			files = (
 				BB8BE4F218395FEF00BD9266 /* cloud.png in Resources */,
 				BB043E8118526CE20078AA89 /* AboutViewController.xib in Resources */,
+				BB0487BE1852DD9800EADEF2 /* Main_iPhoneSmall.storyboard in Resources */,
 				BB8BE4F41839604300BD9266 /* home.png in Resources */,
 				BB8BE4F61839609800BD9266 /* spanner.png in Resources */,
 				BB2B57161838532900288708 /* Images.xcassets in Resources */,
@@ -474,6 +478,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BB0487BC1852DD9800EADEF2 /* Main_iPhoneSmall.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0487BD1852DD9800EADEF2 /* Base */,
+			);
+			name = Main_iPhoneSmall.storyboard;
+			sourceTree = "<group>";
+		};
 		BB2B57001838532900288708 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

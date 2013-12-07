@@ -13,6 +13,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // Code to use alternative storyboard if a 3.5 inch iPhone is used
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
+        UIStoryboard *storyBoard;
+        
+        // Get current size of the screem
+        CGSize result = [[UIScreen mainScreen] bounds].size;
+        CGFloat scale = [UIScreen mainScreen].scale;
+        result = CGSizeMake(result.width * scale, result.height * scale);
+        
+        // If the screen is the 3.5 in size, use the smaller storyboard
+        if(result.height == 960){
+            NSLog(@"FIRED");
+            storyBoard = [UIStoryboard storyboardWithName:@"Main_iPhoneSmall" bundle:nil];
+            UIViewController *initViewController = [storyBoard instantiateInitialViewController];
+            [self.window setRootViewController:initViewController];
+        }
+    }
     return YES;
 }
 							
