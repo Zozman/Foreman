@@ -15,3 +15,7 @@ and QR Code Implementation by Oscar Sanderson
 and libqrencode (http://fukuchi.org/works/qrencode/index.html.en).
 
 Bitcoin pricing by www.bitstamp.com
+
+Found this helpful?  Consider buying me a beer.  Or don't.  Both are fine.
+
+Bitcoin Address: 19d72ob2bgyERMctmdtSzDkfijES12uxwh
