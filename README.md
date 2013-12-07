@@ -14,7 +14,7 @@ and QR Code Implementation by Oscar Sanderson
 (http://www.oscarsanderson.com/2013/08/12/implementing-a-qr-code-generator-on-the-iphone) 
 and libqrencode (http://fukuchi.org/works/qrencode/index.html.en).
 
-Bitcoin pricing by www.bitstamp.com
+Bitcoin pricing by www.bitstamp.net
 
 Found this helpful?  Consider buying me a beer.  Or don't.  Both are fine.
 
