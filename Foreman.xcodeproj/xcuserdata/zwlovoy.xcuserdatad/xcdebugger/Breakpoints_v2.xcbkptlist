@@ -105,28 +105,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Foreman/Json.m"
-            timestampString = "407980401.678285"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "+getBitstampData"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Foreman/StatsViewController.m"
-            timestampString = "408133468.002586"
+            timestampString = "408747256.830717"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
