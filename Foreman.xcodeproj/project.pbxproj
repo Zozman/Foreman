@@ -49,6 +49,7 @@
 		BB8BE4F41839604300BD9266 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8BE4F31839604300BD9266 /* home.png */; };
 		BB8BE4F61839609800BD9266 /* spanner.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8BE4F51839609800BD9266 /* spanner.png */; };
 		BBB97D17185145CC006D6D4F /* BitstampData.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB97D16185145CC006D6D4F /* BitstampData.m */; };
+		BBDDBB571863DF4B00CCCCC2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDDBB551863DF4B00CCCCC2 /* Main_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		BB8BE4F51839609800BD9266 /* spanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spanner.png; sourceTree = "<group>"; };
 		BBB97D15185145CC006D6D4F /* BitstampData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitstampData.h; sourceTree = "<group>"; };
 		BBB97D16185145CC006D6D4F /* BitstampData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitstampData.m; sourceTree = "<group>"; };
+		BBDDBB561863DF4B00CCCCC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 				BB2B57061838532900288708 /* AppDelegate.h */,
 				BB2B57071838532900288708 /* AppDelegate.m */,
 				BB2B57091838532900288708 /* Main_iPhone.storyboard */,
+				BBDDBB551863DF4B00CCCCC2 /* Main_iPad.storyboard */,
 				BB0487BC1852DD9800EADEF2 /* Main_iPhoneSmall.storyboard */,
 				BB2B57151838532900288708 /* Images.xcassets */,
 				BB2B56FE1838532900288708 /* Supporting Files */,
@@ -421,6 +424,7 @@
 				BB8BE4F218395FEF00BD9266 /* cloud.png in Resources */,
 				BB043E8118526CE20078AA89 /* AboutViewController.xib in Resources */,
 				BB0487BE1852DD9800EADEF2 /* Main_iPhoneSmall.storyboard in Resources */,
+				BBDDBB571863DF4B00CCCCC2 /* Main_iPad.storyboard in Resources */,
 				BB8BE4F41839604300BD9266 /* home.png in Resources */,
 				BB41BD211852E12F001387FB /* DonateViewController.xib in Resources */,
 				BB8BE4F61839609800BD9266 /* spanner.png in Resources */,
@@ -522,6 +526,14 @@
 				BB2B57261838532900288708 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BBDDBB551863DF4B00CCCCC2 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBDDBB561863DF4B00CCCCC2 /* Base */,
+			);
+			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
